@@ -8,8 +8,8 @@ import AlertPopup from './component/AlertPopup';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Services from './component/Services';
 import Home from './component/Home';
-import Carousel from './component/Carousel'
 import Others from './component/Others';
+import Carousel from './component/Carousel';
 
 function App() {
   let [mode, setMode] = useState('light');

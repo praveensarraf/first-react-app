@@ -41,7 +41,7 @@ export default function Navbar(props) {
                   <li><hr className="dropdown-divider"/></li>
                   <li><Link className="dropdown-item" to="/Accordion">Accordion</Link></li>
                   <li><hr className="dropdown-divider"/></li>
-                  <li><a className="dropdown-item" href="/Others">Others</a></li>
+                  <li><Link className="dropdown-item" to="/Others">Others</Link></li>
                 </ul>
               </li>
             </ul>

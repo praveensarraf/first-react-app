@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import image1 from '../images/image1.jpg';
+import image2 from '../images/image2.jpg';
+import image3 from '../images/image3.jpg';
 
 export default function Carousel() {
   return (
@@ -12,7 +15,7 @@ export default function Carousel() {
 
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="2000">
-            <img src="images/image1.jpg" className="d-block w-100" alt="..."/>
+            <img src={image1} className="d-block w-100" alt="Image1"/>
             <div className="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
@@ -20,7 +23,7 @@ export default function Carousel() {
           </div>
 
           <div className="carousel-item" data-bs-interval="2000">
-            <img src="images/image2.jpg" className="d-block w-100" alt="..."/>
+            <img src={image2} className="d-block w-100" alt="..."/>
             <div className="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
@@ -28,7 +31,7 @@ export default function Carousel() {
           </div>
 
           <div className="carousel-item" data-bs-interval="2000">
-            <img src="images/image3.jpg" className="d-block w-100" alt="..."/>
+            <img src={image3} className="d-block w-100" alt="..."/>
             <div className="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>Some representative placeholder content for the third slide.</p>
