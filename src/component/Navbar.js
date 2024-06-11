@@ -28,25 +28,21 @@ export default function Navbar(props) {
                 <Link className="nav-link" to="/Services">Services</Link>
               </li>
 
+              <li className="nav-item">
+                <Link className="nav-link" to="/TextEditor">TextEditor</Link>
+              </li>
+
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="emptyLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  See More
                 </a>
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/Carousel">Carousel</Link></li>
                   <li><hr className="dropdown-divider"/></li>
                   <li><Link className="dropdown-item" to="/Accordion">Accordion</Link></li>
                   <li><hr className="dropdown-divider"/></li>
-                  <li><a className="dropdown-item" href="emptyLink">Something else here</a></li>
+                  <li><a className="dropdown-item" href="/Others">Others</a></li>
                 </ul>
-              </li>
-
-              <li className="nav-item">
-                <Link className="nav-link" to="/TextEditor">TextEditor</Link>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link disabled" href="emptyLink" aria-disabled="true">Disabled</a>
               </li>
             </ul>
 
@@ -55,7 +51,7 @@ export default function Navbar(props) {
               <button className={`btn btn-${props.myBtnn}`} type="submit">Search</button>
             </form>
 
-            <div className="form-check form-switch mx-2 d-flex align-items-center">
+            <div className="form-check form-switch mx-2 my-lg-0 my-3 d-flex align-items-center">
               <input className="form-check-input" type="checkbox" role="switch" id="mySwitch" onClick={props.myBtn}/>
               <label className={`form-switch ps-2 text-${props.myBtnn}`} htmlFor="mySwitch">Change Theme</label>
             </div>

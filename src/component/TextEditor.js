@@ -40,16 +40,16 @@ export default function TextEditor() {
         <div className="container py-4">
 
             <div className='row'>
-                <div className='col-9'>
+                <div className='col-lg-9 col-12'>
                     <div className='row'>
-                        <h3 className='text-center fw-bold my-4 myText'><i class="fa-solid fa-pen-nib"></i> : Please enter your text in the text box</h3>
+                        <h3 className='text-center fw-bold my-4 myText'><i className="fa-solid fa-pen-nib"></i> : Please enter your text in the text box</h3>
                     </div>
                     
                     <div className='row my-3'>
                         <textarea placeholder='Enter your text here!' className="form-control" rows="11" value={text} onChange={changingText} style={{ fontStyle: italicTxt ? 'italic' : 'normal' }}></textarea>
                     </div>
 
-                    <div className="row">
+                    <div className="row countBox">
                         <div className="col-md-12 d-md-flex justify-content-around">
                             <h6 className='myText'>
                                 Words Count : <span className='fw-bold h2'> {text.split(" ").filter(words => words !== "").length} </span>
@@ -63,18 +63,18 @@ export default function TextEditor() {
 
                 </div>
                 
-                <div className='col-3 p-5 pb-0'>
+                <div className='col-lg-3 p-lg-5 pb-0'>
                     <div className="row">
-                        <div className='col-12 d-flex flex-column' id='myEditorBtn'>
-                            <button type="button" className="btn" onClick={upperCaseText}>Convert to Upper Case  <i class="fa-solid fa-rotate"></i></button>
+                        <div className='col-lg-12 d-md-flex flex-lg-column' id='myEditorBtn'>
+                            <button type="button" className="btn mx-lg-0 mx-md-2" onClick={upperCaseText}>Convert to Upper Case  <i className="fa-solid fa-rotate"></i></button>
                         
-                            <button type="button" className="btn" onClick={lowerCaseText}>Convert to Lower Case  <i class="fa-solid fa-rotate"></i></button>
+                            <button type="button" className="btn mx-lg-0 mx-sm-2" onClick={lowerCaseText}>Convert to Lower Case  <i className="fa-solid fa-rotate"></i></button>
 
-                            <button type="button" className="btn" onClick={italicText}>Convert to Italic Text  ( <i class="fa-solid fa-italic"></i> )</button>
+                            <button type="button" className="btn mx-lg-0 mx-sm-2" onClick={italicText}>Convert to Italic Text  (<i className="fa-solid fa-italic"></i> )</button>
 
-                            <button type="button" className="btn" onClick={clearText}>Clear Text  <i class="fa-regular fa-circle-check"></i></button>
+                            <button type="button" className="btn mx-lg-0 mx-sm-2" onClick={clearText}>Clear Text  <i className="fa-regular fa-circle-check"></i></button>
 
-                            <button type="button" className="btn" onClick={toggleWebcam}>{myWebcam ? "Close Webcam" : "Open Webcam"}  <i class="fa-solid fa-camera"></i></button>
+                            <button type="button" className="btn mx-lg-0 mx-sm-2" onClick={toggleWebcam}>{myWebcam ? "Close Webcam" : "Open Webcam"}  <i className="fa-solid fa-camera"></i></button>
                         </div>
                     </div>
                 </div>

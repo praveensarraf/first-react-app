@@ -8,7 +8,8 @@ import AlertPopup from './component/AlertPopup';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Services from './component/Services';
 import Home from './component/Home';
-import Carousel from './component/c'
+import Carousel from './component/Carousel'
+import Others from './component/Others';
 
 function App() {
   let [mode, setMode] = useState('light');
@@ -52,7 +53,7 @@ function App() {
     <>
       
       <BrowserRouter>
-        <Navbar replace="My House" byDefault={mode} myBtn={toggleMode} myBtnn={btnChange} />
+        <Navbar replace="Home" byDefault={mode} myBtn={toggleMode} myBtnn={btnChange} />
         <AlertPopup alert={myAlert} />
 
         <Routes>
@@ -63,6 +64,7 @@ function App() {
           <Route path='/Carousel' element={<Carousel/>}></Route>
           <Route path='/Accordion' element={<Accordion myBtnn={btnChange}/>}></Route>
           <Route path='/TextEditor' element={<TextEditor/>}></Route>
+          <Route path='/Others' element={<Others/>}></Route>
 
         </Routes>
       </BrowserRouter>

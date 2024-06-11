@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,11 +35,11 @@
   to {
     transform: rotate(360deg);
   }
-}
+} *
 
 /* -------------------------------------------------------------------------------- */
 
-#head{
+/* #head{
   text-align: center;
   font-weight: 900;
   font-size: 50px;
@@ -53,7 +53,7 @@
   background: linear-gradient(to right, maroon, red, gold, blue, green, green);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 
 
@@ -103,10 +103,11 @@
   font-size: 20px;
   font-weight: 500;
   color: white;
-  background: rgba(32, 178, 170, 0.5);
+  background: #20b2aa80;
   border: 2px solid #282c34;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
   border-radius: 0 10px;
+  width: 100%;
 }
 
 #myBox textarea::placeholder{
@@ -142,3 +143,29 @@
 
 /* Text-Editor Closed */
 
+@media screen and (max-width: 767px){
+  .carousel .carousel-item img{
+    height: 250px;
+  }
+
+  .countBox{
+    text-align: center;
+  }
+
+  #myEditorBtn button.btn{
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 575px){
+  #myBox textarea{
+    margin: 0 20px;
+    width: calc(100% - 40px);
+  }
+
+  #myEditorBtn{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
