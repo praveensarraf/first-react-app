@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+ import React, { useState } from 'react'
 
 export default function Accordion(props) {
 
@@ -17,7 +17,7 @@ export default function Accordion(props) {
     // }
 
     let toggleAccordion = () => {
-        if (myAcordionBtn.color=== black){
+        if (myAcordionBtn.color === black){
             setAccordionBtn({background: black, color: gold});
             setAccordionBody({background: gold, color: black});
         } else {

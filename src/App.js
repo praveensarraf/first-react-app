@@ -20,11 +20,13 @@ function App() {
       setMode('dark');  
       setBtnChange('light');
       showPopup('Dark Mode Enabled', 'Success');
+      console.log('Dark Mode Enabled');
     } 
     else {
       setMode('light');
       setBtnChange('dark');
       showPopup('Light Mode Enabled', 'Success');
+      console.log('Light Mode Enabled');
     }
   };
 
@@ -58,7 +60,7 @@ function App() {
 
         <Routes>
 
-          <Route path='/Home' element={<Home/>}></Route>
+          <Route path='/first-react-app' element={<Home/>}></Route>
           <Route path='/About' element={<About/>}></Route>
           <Route path='/Services' element={<Services/>}></Route>
           <Route path='/Carousel' element={<Carousel/>}></Route>
